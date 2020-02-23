@@ -34,37 +34,11 @@
 				<false/>
 			</dict>
 		</array>
-		<key>1BBDD056-ACE1-4B1C-9A04-B8A98C36C5BE</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>29ED7E48-B6E5-4117-93ED-0895036BDEE4</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
 		<key>241BA55B-8D9F-4280-8999-89406407A32A</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
 				<string>164A80FD-2E20-4361-BEA7-0586E4374C85</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
-		<key>29ED7E48-B6E5-4117-93ED-0895036BDEE4</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>2333FD00-BC81-49C4-81BC-EDC487406FBC</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -203,11 +177,37 @@
 				<false/>
 			</dict>
 		</array>
+		<key>CB8BB0C8-E879-4118-8E6C-82856C5FB10F</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>FFF180E6-D4C8-4838-A552-24C6C2EA0503</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>DF089FA5-300F-4657-959B-92B0CF49562B</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
 				<string>96B235E3-13E0-488B-A9FD-9A71F58DE574</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>FFF180E6-D4C8-4838-A552-24C6C2EA0503</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>250A0979-ABA1-4F34-B9A2-EB6A2E9E3710</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -227,25 +227,6 @@
 	<string>Note Taking App</string>
 	<key>objects</key>
 	<array>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>escaping</key>
-				<integer>0</integer>
-				<key>script</key>
-				<string>directory=$(date +"%d_%m_%Y")
-mkdir ~/Projects/note-taking-app/notes/${directory}
-cd ~/Projects/note-taking-app/notes/${directory}
-your_text="{query}"
-subl -n :lines "${directory} ${your_text}.md"</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.terminalcommand</string>
-			<key>uid</key>
-			<string>18EB5FA0-58E5-4283-92FF-FA67820D1D07</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
 		<dict>
 			<key>config</key>
 			<dict>
@@ -298,7 +279,75 @@ subl -n :lines "${directory} ${your_text}.md"</string>
 			<key>type</key>
 			<string>alfred.workflow.trigger.hotkey</string>
 			<key>uid</key>
-			<string>1BBDD056-ACE1-4B1C-9A04-B8A98C36C5BE</string>
+			<string>2CE500DA-2EA4-4E17-8C30-98254B3D6B3C</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>0</integer>
+				<key>keyword</key>
+				<string>cn</string>
+				<key>subtext</key>
+				<string></string>
+				<key>text</key>
+				<string>Create Note</string>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>5863DC6A-735E-4F8B-A089-FD0D0B0B504B</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>escaping</key>
+				<integer>0</integer>
+				<key>script</key>
+				<string>directory=$(date +"%d_%m_%Y")
+mkdir ~/Projects/note-taking-app/notes
+mkdir ~/Projects/note-taking-app/notes/${directory}
+cd ~/Projects/note-taking-app/notes/${directory}
+your_text="{query}"
+subl -n :lines "${directory} ${your_text}.md"
+clear</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.terminalcommand</string>
+			<key>uid</key>
+			<string>18EB5FA0-58E5-4283-92FF-FA67820D1D07</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string>cd ~/Projects/note-taking-app
+now=$(date +"%d_%m_%Y")
+your_text="{query}"
+echo "- ${now}, ${your_text}" &gt;&gt; todos.csv</string>
+				<key>scriptargtype</key>
+				<integer>0</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>0C8F3EB1-5B63-4C8F-BC0B-BAC0688E8931</string>
 			<key>version</key>
 			<integer>2</integer>
 		</dict>
@@ -368,67 +417,6 @@ subl -n :lines "${directory} ${your_text}.md"</string>
 			<key>type</key>
 			<string>alfred.workflow.trigger.hotkey</string>
 			<key>uid</key>
-			<string>2CE500DA-2EA4-4E17-8C30-98254B3D6B3C</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>concurrently</key>
-				<false/>
-				<key>escaping</key>
-				<integer>102</integer>
-				<key>script</key>
-				<string>cd ~/Projects/note-taking-app
-now=$(date +"%d_%m_%Y")
-your_text="{query}"
-echo "- ${now}, ${your_text}" &gt;&gt; todos.csv</string>
-				<key>scriptargtype</key>
-				<integer>0</integer>
-				<key>scriptfile</key>
-				<string></string>
-				<key>type</key>
-				<integer>0</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.script</string>
-			<key>uid</key>
-			<string>0C8F3EB1-5B63-4C8F-BC0B-BAC0688E8931</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>action</key>
-				<integer>0</integer>
-				<key>argument</key>
-				<integer>0</integer>
-				<key>focusedappvariable</key>
-				<false/>
-				<key>focusedappvariablename</key>
-				<string></string>
-				<key>hotkey</key>
-				<integer>0</integer>
-				<key>hotmod</key>
-				<integer>0</integer>
-				<key>hotstring</key>
-				<string></string>
-				<key>leftcursor</key>
-				<false/>
-				<key>modsmode</key>
-				<integer>2</integer>
-				<key>relatedApps</key>
-				<array>
-					<string>com.apple.Notes</string>
-				</array>
-				<key>relatedAppsMode</key>
-				<integer>1</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.trigger.hotkey</string>
-			<key>uid</key>
 			<string>BD55985A-2E84-404A-AFF3-2E37E9BBD175</string>
 			<key>version</key>
 			<integer>2</integer>
@@ -464,30 +452,9 @@ echo "- ${now}, ${your_text}" &gt;&gt; todos.csv</string>
 			<key>type</key>
 			<string>alfred.workflow.trigger.hotkey</string>
 			<key>uid</key>
-			<string>2F088911-DCE1-40F0-B5DF-60E729B1FBCC</string>
+			<string>751E8896-CE5A-423B-9EFD-0894A5B92E72</string>
 			<key>version</key>
 			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>argumenttype</key>
-				<integer>0</integer>
-				<key>keyword</key>
-				<string>cn</string>
-				<key>subtext</key>
-				<string></string>
-				<key>text</key>
-				<string>Create Note</string>
-				<key>withspace</key>
-				<true/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.input.keyword</string>
-			<key>uid</key>
-			<string>5863DC6A-735E-4F8B-A089-FD0D0B0B504B</string>
-			<key>version</key>
-			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -520,7 +487,7 @@ echo "- ${now}, ${your_text}" &gt;&gt; todos.csv</string>
 			<key>type</key>
 			<string>alfred.workflow.trigger.hotkey</string>
 			<key>uid</key>
-			<string>751E8896-CE5A-423B-9EFD-0894A5B92E72</string>
+			<string>2F088911-DCE1-40F0-B5DF-60E729B1FBCC</string>
 			<key>version</key>
 			<integer>2</integer>
 		</dict>
@@ -651,42 +618,37 @@ subl -n "${var}"</string>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>escaping</key>
+				<key>action</key>
 				<integer>0</integer>
-				<key>script</key>
-				<string>cd ~/Projects/note-taking-app/notes
-var=$(find . -print | grep -i {query})
-echo "${var}"
-
-subl -n "${var}"</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.terminalcommand</string>
-			<key>uid</key>
-			<string>2333FD00-BC81-49C4-81BC-EDC487406FBC</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>argumenttype</key>
+				<key>argument</key>
 				<integer>0</integer>
-				<key>keyword</key>
-				<string>vn</string>
-				<key>subtext</key>
+				<key>focusedappvariable</key>
+				<false/>
+				<key>focusedappvariablename</key>
 				<string></string>
-				<key>text</key>
-				<string>View Note</string>
-				<key>withspace</key>
-				<true/>
+				<key>hotkey</key>
+				<integer>0</integer>
+				<key>hotmod</key>
+				<integer>0</integer>
+				<key>hotstring</key>
+				<string></string>
+				<key>leftcursor</key>
+				<false/>
+				<key>modsmode</key>
+				<integer>2</integer>
+				<key>relatedApps</key>
+				<array>
+					<string>com.apple.Notes</string>
+				</array>
+				<key>relatedAppsMode</key>
+				<integer>1</integer>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.input.keyword</string>
+			<string>alfred.workflow.trigger.hotkey</string>
 			<key>uid</key>
-			<string>29ED7E48-B6E5-4117-93ED-0895036BDEE4</string>
+			<string>A29FDD0C-9F2C-4BD1-BE87-F426E45C740F</string>
 			<key>version</key>
-			<integer>1</integer>
+			<integer>2</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -726,37 +688,20 @@ subl -n "${var}"</string>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>action</key>
+				<key>escaping</key>
 				<integer>0</integer>
-				<key>argument</key>
-				<integer>0</integer>
-				<key>focusedappvariable</key>
-				<false/>
-				<key>focusedappvariablename</key>
-				<string></string>
-				<key>hotkey</key>
-				<integer>0</integer>
-				<key>hotmod</key>
-				<integer>0</integer>
-				<key>hotstring</key>
-				<string></string>
-				<key>leftcursor</key>
-				<false/>
-				<key>modsmode</key>
-				<integer>2</integer>
-				<key>relatedApps</key>
-				<array>
-					<string>com.apple.Notes</string>
-				</array>
-				<key>relatedAppsMode</key>
-				<integer>1</integer>
+				<key>script</key>
+				<string>cd ~/Projects/note-taking-app/snippets
+now=$(date +"%d_%m_%Y")
+your_text="{query}"
+subl -n :lines "${your_text}"</string>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.trigger.hotkey</string>
+			<string>alfred.workflow.action.terminalcommand</string>
 			<key>uid</key>
-			<string>A29FDD0C-9F2C-4BD1-BE87-F426E45C740F</string>
+			<string>885F7F5E-8463-4E5A-AAA1-983E91BCACEE</string>
 			<key>version</key>
-			<integer>2</integer>
+			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -782,18 +727,40 @@ subl -n "${var}"</string>
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>argumenttype</key>
+				<integer>0</integer>
+				<key>keyword</key>
+				<string>vs</string>
+				<key>subtext</key>
+				<string></string>
+				<key>text</key>
+				<string>View Snippet</string>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>B8CEB9C2-DBEA-422A-BD7E-B9014D44A423</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>escaping</key>
 				<integer>0</integer>
 				<key>script</key>
 				<string>cd ~/Projects/note-taking-app/snippets
-now=$(date +"%d_%m_%Y")
-your_text="{query}"
-subl -n :lines "${your_text}"</string>
+var=$(find . -print | grep -i {query})
+echo "${var}"
+
+subl -n "${var}"</string>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.action.terminalcommand</string>
 			<key>uid</key>
-			<string>885F7F5E-8463-4E5A-AAA1-983E91BCACEE</string>
+			<string>7393E59E-35A1-4054-9215-CFB36A189451</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -904,42 +871,81 @@ class NewFileListener(sublime_plugin.EventListener):
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>argumenttype</key>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string>/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl -v | pbcopy</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
 				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>250A0979-ABA1-4F34-B9A2-EB6A2E9E3710</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>2</integer>
 				<key>keyword</key>
-				<string>vs</string>
+				<string>testing</string>
 				<key>subtext</key>
 				<string></string>
 				<key>text</key>
-				<string>View Snippet</string>
+				<string>Create Note</string>
 				<key>withspace</key>
-				<true/>
+				<false/>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.input.keyword</string>
 			<key>uid</key>
-			<string>B8CEB9C2-DBEA-422A-BD7E-B9014D44A423</string>
+			<string>FFF180E6-D4C8-4838-A552-24C6C2EA0503</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>escaping</key>
+				<key>action</key>
 				<integer>0</integer>
-				<key>script</key>
-				<string>cd ~/Projects/note-taking-app/snippets
-var=$(find . -print | grep -i {query})
-echo "${var}"
-
-subl -n "${var}"</string>
+				<key>argument</key>
+				<integer>0</integer>
+				<key>focusedappvariable</key>
+				<false/>
+				<key>focusedappvariablename</key>
+				<string></string>
+				<key>hotkey</key>
+				<integer>0</integer>
+				<key>hotmod</key>
+				<integer>0</integer>
+				<key>hotstring</key>
+				<string></string>
+				<key>leftcursor</key>
+				<false/>
+				<key>modsmode</key>
+				<integer>2</integer>
+				<key>relatedApps</key>
+				<array>
+					<string>com.apple.Notes</string>
+				</array>
+				<key>relatedAppsMode</key>
+				<integer>1</integer>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.action.terminalcommand</string>
+			<string>alfred.workflow.trigger.hotkey</string>
 			<key>uid</key>
-			<string>7393E59E-35A1-4054-9215-CFB36A189451</string>
+			<string>CB8BB0C8-E879-4118-8E6C-82856C5FB10F</string>
 			<key>version</key>
-			<integer>1</integer>
+			<integer>2</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -1004,9 +1010,9 @@ Requirements:
 - Want to be able to copy them to clipboard
 - Want to be able to run them</string>
 			<key>xpos</key>
-			<integer>190</integer>
+			<integer>160</integer>
 			<key>ypos</key>
-			<integer>505</integer>
+			<integer>300</integer>
 		</dict>
 		<key>18EB5FA0-58E5-4283-92FF-FA67820D1D07</key>
 		<dict>
@@ -1015,35 +1021,19 @@ Requirements:
 			<key>ypos</key>
 			<integer>10</integer>
 		</dict>
-		<key>1BBDD056-ACE1-4B1C-9A04-B8A98C36C5BE</key>
-		<dict>
-			<key>xpos</key>
-			<integer>10</integer>
-			<key>ypos</key>
-			<integer>10</integer>
-		</dict>
-		<key>2333FD00-BC81-49C4-81BC-EDC487406FBC</key>
-		<dict>
-			<key>xpos</key>
-			<integer>335</integer>
-			<key>ypos</key>
-			<integer>275</integer>
-		</dict>
 		<key>241BA55B-8D9F-4280-8999-89406407A32A</key>
 		<dict>
 			<key>xpos</key>
 			<integer>10</integer>
 			<key>ypos</key>
-			<integer>500</integer>
+			<integer>275</integer>
 		</dict>
-		<key>29ED7E48-B6E5-4117-93ED-0895036BDEE4</key>
+		<key>250A0979-ABA1-4F34-B9A2-EB6A2E9E3710</key>
 		<dict>
-			<key>note</key>
-			<string>View Note</string>
 			<key>xpos</key>
-			<integer>155</integer>
+			<integer>410</integer>
 			<key>ypos</key>
-			<integer>280</integer>
+			<integer>645</integer>
 		</dict>
 		<key>2CE500DA-2EA4-4E17-8C30-98254B3D6B3C</key>
 		<dict>
@@ -1057,7 +1047,7 @@ Requirements:
 			<key>xpos</key>
 			<integer>10</integer>
 			<key>ypos</key>
-			<integer>10</integer>
+			<integer>15</integer>
 		</dict>
 		<key>3FCF7928-AC02-41FE-B2EC-EE851AE20E71</key>
 		<dict>
@@ -1090,9 +1080,9 @@ Requirements:
 		<key>7393E59E-35A1-4054-9215-CFB36A189451</key>
 		<dict>
 			<key>xpos</key>
-			<integer>370</integer>
+			<integer>310</integer>
 			<key>ypos</key>
-			<integer>630</integer>
+			<integer>425</integer>
 		</dict>
 		<key>751E8896-CE5A-423B-9EFD-0894A5B92E72</key>
 		<dict>
@@ -1111,9 +1101,9 @@ Requirements:
 		<key>885F7F5E-8463-4E5A-AAA1-983E91BCACEE</key>
 		<dict>
 			<key>xpos</key>
-			<integer>370</integer>
+			<integer>310</integer>
 			<key>ypos</key>
-			<integer>510</integer>
+			<integer>300</integer>
 		</dict>
 		<key>929E5DD4-04DB-4586-ABE3-6DCBA9AFF6DB</key>
 		<dict>
@@ -1127,16 +1117,16 @@ Requirements:
 		<key>96B235E3-13E0-488B-A9FD-9A71F58DE574</key>
 		<dict>
 			<key>xpos</key>
-			<integer>335</integer>
+			<integer>325</integer>
 			<key>ypos</key>
-			<integer>145</integer>
+			<integer>135</integer>
 		</dict>
 		<key>A29FDD0C-9F2C-4BD1-BE87-F426E45C740F</key>
 		<dict>
 			<key>xpos</key>
 			<integer>10</integer>
 			<key>ypos</key>
-			<integer>505</integer>
+			<integer>275</integer>
 		</dict>
 		<key>B8CEB9C2-DBEA-422A-BD7E-B9014D44A423</key>
 		<dict>
@@ -1145,9 +1135,9 @@ Requirements:
 
 Return list of Snippets for Query, select to open in sublime and cmd + open to copy to clipboard</string>
 			<key>xpos</key>
-			<integer>190</integer>
+			<integer>160</integer>
 			<key>ypos</key>
-			<integer>625</integer>
+			<integer>420</integer>
 		</dict>
 		<key>BCCF4570-783A-4DF4-BD4B-D6934FAD45DF</key>
 		<dict>
@@ -1173,6 +1163,13 @@ Requirements:
 			<key>ypos</key>
 			<integer>10</integer>
 		</dict>
+		<key>CB8BB0C8-E879-4118-8E6C-82856C5FB10F</key>
+		<dict>
+			<key>xpos</key>
+			<integer>10</integer>
+			<key>ypos</key>
+			<integer>705</integer>
+		</dict>
 		<key>DAB65FB9-118C-4D9B-B7D7-EE1B089AF000</key>
 		<dict>
 			<key>xpos</key>
@@ -1185,9 +1182,9 @@ Requirements:
 			<key>note</key>
 			<string>View Note</string>
 			<key>xpos</key>
-			<integer>160</integer>
+			<integer>155</integer>
 			<key>ypos</key>
-			<integer>145</integer>
+			<integer>135</integer>
 		</dict>
 		<key>E214FC83-D34F-4E24-BCF2-379D4F79363E</key>
 		<dict>
@@ -1215,6 +1212,15 @@ https://gist.github.com/finscn/8bc573bb3a970b1c214d</string>
 			<integer>1335</integer>
 			<key>ypos</key>
 			<integer>540</integer>
+		</dict>
+		<key>FFF180E6-D4C8-4838-A552-24C6C2EA0503</key>
+		<dict>
+			<key>note</key>
+			<string>Create Note Bash Script</string>
+			<key>xpos</key>
+			<integer>160</integer>
+			<key>ypos</key>
+			<integer>705</integer>
 		</dict>
 	</dict>
 	<key>variablesdontexport</key>
