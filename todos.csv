@@ -6,3 +6,7 @@
 - 16_02_2020, Add README file to repo
 - 20_02_2020, Create config commands to setup where to save the todos notes and snippets
 - 21_02_2020, Update Dev docs with mysql issue
+- 23_02_2020, Open Sublime notes project for view all notes
+- 23_02_2020, Convert computational scripts into Ruby
+- 23_02_2020, Allow spaces when viewing single note
+- 23_02_2020, Use Ruby Script to return list of notes to view in alfred
