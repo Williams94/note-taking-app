@@ -1,6 +1,8 @@
-- 16_02_2020, Replace Terminal Commands with Run Scripts
 - 16_02_2020, Once replaced with scripts then unit test those scripts
 - 16_02_2020, Have way to scope todos for different projects
-- 16_02_2020, Allow completion of todos (how?)
+- 16_02_2020, Allow completion of todos (how? - check emoji, just delete the line, strikeout line, remove completed after 7 days?)
 - 16_02_2020, Turn Note Taking App into an Instructable and Link to Gihub also could use nice gifs of using it etc
 - 16_02_2020, How to have all project files under /Projects folder (e.g. commit in ~/Projects/note-taking-app for updates to todos.csv but also .info plist)
+- 16_02_2020, Add README file to repo
+- 20_02_2020, Create config commands to setup where to save the todos notes and snippets
+- 21_02_2020, Update Dev docs with mysql issue
