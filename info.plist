@@ -21,6 +21,8 @@
 				<false/>
 			</dict>
 		</array>
+		<key>0DBDC8A0-35E0-4478-9D16-2A1A4A502C5D</key>
+		<array/>
 		<key>164A80FD-2E20-4361-BEA7-0586E4374C85</key>
 		<array>
 			<dict>
@@ -877,6 +879,78 @@ echo "${var}"
 			<key>version</key>
 			<integer>2</integer>
 		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>alfredfiltersresults</key>
+				<false/>
+				<key>alfredfiltersresultsmatchmode</key>
+				<integer>0</integer>
+				<key>argumenttreatemptyqueryasnil</key>
+				<true/>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>0</integer>
+				<key>escaping</key>
+				<integer>0</integer>
+				<key>keyword</key>
+				<string>sum</string>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<true/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
+				<key>runningsubtext</key>
+				<string></string>
+				<key>script</key>
+				<string>/usr/bin/ruby ~/Projects/note-taking-app/scripts/ruby/test.rb {query}</string>
+				<key>scriptargtype</key>
+				<integer>0</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>subtext</key>
+				<string></string>
+				<key>title</key>
+				<string>testing</string>
+				<key>type</key>
+				<integer>0</integer>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>864CA727-8EEA-456F-94F9-220D7911855E</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string>/usr/bin/ruby ~/Projects/note-taking-app/scripts/ruby/test.rb {query}</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>0DBDC8A0-35E0-4478-9D16-2A1A4A502C5D</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
 	</array>
 	<key>readme</key>
 	<string></string>
@@ -909,6 +983,13 @@ Requirements:
 			<integer>920</integer>
 			<key>ypos</key>
 			<integer>10</integer>
+		</dict>
+		<key>0DBDC8A0-35E0-4478-9D16-2A1A4A502C5D</key>
+		<dict>
+			<key>xpos</key>
+			<integer>870</integer>
+			<key>ypos</key>
+			<integer>620</integer>
 		</dict>
 		<key>13D2D4AF-9243-4213-97C1-5642231247D2</key>
 		<dict>
@@ -1028,6 +1109,13 @@ Requirements:
 			<key>ypos</key>
 			<integer>255</integer>
 		</dict>
+		<key>864CA727-8EEA-456F-94F9-220D7911855E</key>
+		<dict>
+			<key>xpos</key>
+			<integer>675</integer>
+			<key>ypos</key>
+			<integer>620</integer>
+		</dict>
 		<key>929E5DD4-04DB-4586-ABE3-6DCBA9AFF6DB</key>
 		<dict>
 			<key>note</key>
@@ -1102,7 +1190,7 @@ https://gist.github.com/finscn/8bc573bb3a970b1c214d</string>
 	<key>variablesdontexport</key>
 	<array/>
 	<key>version</key>
-	<string>1.4</string>
+	<string>1.5</string>
 	<key>webaddress</key>
 	<string></string>
 </dict>
