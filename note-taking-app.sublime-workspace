@@ -1,0 +1,280 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "notes/26_02_2020/26_02_2020 My UT prod users.md",
+			"settings":
+			{
+				"buffer_size": 139,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/rwilliams/Projects/note-taking-app",
+		"/Users/rwilliams/Projects/note-taking-app/notes",
+		"/Users/rwilliams/Projects/note-taking-app/notes/17_02_2020",
+		"/Users/rwilliams/Projects/note-taking-app/notes/18_02_2020",
+		"/Users/rwilliams/Projects/note-taking-app/notes/20_02_2020",
+		"/Users/rwilliams/Projects/note-taking-app/notes/24_02_2020",
+		"/Users/rwilliams/Projects/note-taking-app/notes/26_02_2020",
+		"/Users/rwilliams/Projects/note-taking-app/notes/28_02_2020",
+		"/Users/rwilliams/Projects/note-taking-app/snippets"
+	],
+	"file_history":
+	[
+		"/Users/rwilliams/Projects/note-taking-app/notes/18_02_2020/18_02_2020 Tuesday .md",
+		"/Users/rwilliams/Projects/note-taking-app/snippets/Testing",
+		"/Users/rwilliams/Projects/note-taking-app/snippets/Run external commnad in Ruby",
+		"/tmp/subl stdin BPlrcg.txt",
+		"/tmp/subl stdin mAJJnS.txt",
+		"/Users/rwilliams/Projects/note-taking-app/notes/20_02_2020/20_02_2020 Review Feedback Highlights.md",
+		"/Users/rwilliams/Projects/note-taking-app/.git/COMMIT_EDITMSG",
+		"/Users/rwilliams/Projects/note-taking-app/notes/20_02_2020/test",
+		"/Users/rwilliams/Projects/note-taking-app/.gitignore",
+		"/Users/rwilliams/Projects/note-taking-app/todos.csv",
+		"/Users/rwilliams/Projects/note-taking-app/snippets/Access Internal Review",
+		"/Users/rwilliams/Projects/note-taking-app/notes/18_02_2020/18_02_2020 UI UX Guild Meeting.md",
+		"/Users/rwilliams/Projects/note-taking-app/notes/18_02_2020/",
+		"/Users/rwilliams/Projects/note-taking-app/notes/17_02_2020/17_02_2020 Monday .md",
+		"/Users/rwilliams/17_02_2020 Monday .md",
+		"/Users/rwilliams/Projects/note-taking-app/notes/17_02_2020/",
+		"/Users/rwilliams/Projects/note-taking-app/notes/17_02_2020/17_02_2020 Saved Panel Insight User access wrong.md",
+		"/Users/rwilliams/",
+		"/Users/rwilliams/Projects/NoteTakingApp/todos.csv",
+		"/Users/rwilliams/Projects/NoteTakingApp/find_files.sh",
+		"/Users/rwilliams/Projects/NoteTakingApp/",
+		"/Users/rwilliams/Projects/NoteTakingApp/16_02_2020 Test Note #1.md",
+		"/Users/rwilliams/Projects/NoteTakingApp/notes/key-differentiators-talk.md",
+		"/Users/rwilliams/Projects/NoteTakingApp/todos/16_02_2020 Reading.md",
+		"/Users/rwilliams/Projects/NoteTakingApp/todos/",
+		"/Users/rwilliams/Projects/NoteTakingApp/notes/16_02_2020/",
+		"/Users/rwilliams/Projects/NoteTakingApp/notes/16_02_2020/16_02_2020 Testng this notes works.md",
+		"/Users/rwilliams/Projects/NoteTakingApp/todos/todos/",
+		"/Users/rwilliams/Projects/NoteTakingApp/todos/todos/16_02_2020 Finish book.md",
+		"/Users/rwilliams/Projects/NoteTakingApp/todos/todos.csv",
+		"/Users/rwilliams/Projects/NoteTakingApp/notes/16_02_2020/16_02_2020 Bara is the best again.md\n./notes/16_02_2020/16_02_2020 Bara is the best.md",
+		"/Users/rwilliams/Projects/NoteTakingApp/notes/16_02_2020/16_02_2020 Bara is the best.md",
+		"/Users/rwilliams/Projects/NoteTakingApp/notes/find",
+		"/Users/rwilliams/Projects/NoteTakingApp/notes/16_02_2020/16_02_2020 My New Note.md",
+		"/Users/rwilliams/Library/Application Support/Alfred/Alfred.alfredpreferences/workflows/user.workflow.DEFD3675-2063-42E5-8D03-71C91A11B786/",
+		"/Users/rwilliams/Library/Application Support/Alfred/Alfred.alfredpreferences/workflows/user.workflow.DEFD3675-2063-42E5-8D03-71C91A11B786/16_02_2020 reading.md",
+		"/Users/rwilliams/Library/Application Support/Alfred/Alfred.alfredpreferences/workflows/user.workflow.DEFD3675-2063-42E5-8D03-71C91A11B786/16_02_2020 My New Test Note.md",
+		"/Users/rwilliams/Projects/NoteTakingApp/notes/",
+		"/Users/rwilliams/Projects/NoteTakingApp/notes/16_02_2020 Test This Bitch.md",
+		"/Users/rwilliams/Projects/NoteTakingApp/notes/16_02_2020_Test this note.md",
+		"/Users/rwilliams/Projects/NoteTakingApp/notes/16_02_2020_Test%20This%0A.md",
+		"/Users/rwilliams/Projects/NoteTakingApp/notes/{16_02_2020}_Test.md",
+		"/Users/rwilliams/Projects/NoteTakingApp/notes/.md",
+		"/Users/rwilliams/Projects/NoteTakingApp/notes/{16_02_2020}_Test_Note.md",
+		"/Users/rwilliams/Projects/NoteTakingApp/notes/16_02_2020.md",
+		"/Users/rwilliams/Projects/NoteTakingApp/notes/My Notes.md",
+		"/Users/rwilliams/Test",
+		"/Users/rwilliams/Title",
+		"/Users/rwilliams/of",
+		"/Users/rwilliams/Note",
+		"/Users/rwilliams/Hello",
+		"/Users/rwilliams/Projects/NoteTakingApp/key-differentiators-talk.md",
+		"/Users/rwilliams/date",
+		"/Users/rwilliams/+%d-%m-%Y",
+		"/Users/rwilliams/1",
+		"/Users/rwilliams/Projects/Note Taking App/Key Differentiators Talk.md",
+		"/Users/rwilliams/Downloads/Icon_Close.svg",
+		"/Users/rwilliams/Documents/trello.json",
+		"/Users/rwilliams/UserTesting/orders/spec/graphql/graphql_queries/study_queries_spec.rb",
+		"/Users/rwilliams/Library/Application Support/Alfred/Alfred.alfredpreferences/workflows/user.workflow.CF512719-3259-4ED3-BC59-14832ABDAFDA/README.md",
+		"/Users/rwilliams/Documents/Dev/routes",
+		"/Users/rwilliams/Documents/Dev/garys_tester.csv",
+		"/Users/rwilliams/Documents/approved_tester.csv",
+		"/Users/rwilliams/Documents/approved_tester",
+		"/Users/rwilliams/Downloads/Updated_Card-Brancher_-_with_optional_project_name.sh",
+		"/Users/rwilliams/Downloads/Card_brancher.sh"
+	],
+	"find":
+	{
+		"height": 24.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": true,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "notes/26_02_2020/26_02_2020 My UT prod users.md",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 139,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								139,
+								139
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Markdown/Markdown.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 24.0
+	},
+	"input":
+	{
+		"height": 36.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "note-taking-app.sublime-project",
+	"replace":
+	{
+		"height": 44.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 337.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

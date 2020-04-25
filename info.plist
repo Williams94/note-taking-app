@@ -211,13 +211,13 @@
 				<key>escaping</key>
 				<integer>102</integer>
 				<key>script</key>
-				<string>directory=$(date +"%d_%m_%Y")
-mkdir ~/Projects/note-taking-app/notes
-mkdir ~/Projects/note-taking-app/notes/${directory}
-cd ~/Projects/note-taking-app/notes/${directory}
-your_text="{query}"
-/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl -n :lines "${directory} ${your_text}.md"
-clear</string>
+				<string>month=$(date +"%m")
+dateName=$(date +"%d_%m_%Y")
+mkdir ~/Projects/note-taking-app/notes/${month}
+mkdir ~/Projects/note-taking-app/notes/${month}/${dateName}
+cd ~/Projects/note-taking-app/notes/${month}/${dateName}
+
+/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl -n :lines "${dateName} {query}.md"</string>
 				<key>scriptargtype</key>
 				<integer>0</integer>
 				<key>scriptfile</key>
@@ -443,27 +443,6 @@ echo "- ${now}, ${your_text}" &gt;&gt; todos.csv</string>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>argumenttype</key>
-				<integer>2</integer>
-				<key>keyword</key>
-				<string>vat</string>
-				<key>subtext</key>
-				<string></string>
-				<key>text</key>
-				<string>View All To Dos</string>
-				<key>withspace</key>
-				<false/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.input.keyword</string>
-			<key>uid</key>
-			<string>929E5DD4-04DB-4586-ABE3-6DCBA9AFF6DB</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>action</key>
 				<integer>0</integer>
 				<key>argument</key>
@@ -495,6 +474,27 @@ echo "- ${now}, ${your_text}" &gt;&gt; todos.csv</string>
 			<string>D9F30865-DBF8-458B-9F37-51E477401E6B</string>
 			<key>version</key>
 			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>2</integer>
+				<key>keyword</key>
+				<string>vat</string>
+				<key>subtext</key>
+				<string></string>
+				<key>text</key>
+				<string>View All To Dos</string>
+				<key>withspace</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>929E5DD4-04DB-4586-ABE3-6DCBA9AFF6DB</string>
+			<key>version</key>
+			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -1111,6 +1111,8 @@ Requirements:
 		</dict>
 		<key>864CA727-8EEA-456F-94F9-220D7911855E</key>
 		<dict>
+			<key>note</key>
+			<string>https://medium.com/@ricardoruwer/how-to-create-alfred-3-workflow-in-ruby-c4bb511ce446</string>
 			<key>xpos</key>
 			<integer>675</integer>
 			<key>ypos</key>
