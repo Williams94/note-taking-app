@@ -10,3 +10,8 @@
 - 23_02_2020, Convert computational scripts into Ruby
 - 23_02_2020, Allow spaces when viewing single note
 - 23_02_2020, Use Ruby Script to return list of notes to view in alfred
+- 23_02_2020, Test Ruby scripts with TAP https://testanything.org/testing-with-tap/ruby.html
+- 23_02_2020, Test Bash scripts with TAP
+- 05_03_2020, Put notes in month folders
+- 08_03_2020, Move scripts into own files and run script file from alfred run script action
+- 25_04_2020, Config to decide where to store notes
